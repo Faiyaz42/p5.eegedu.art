@@ -45,9 +45,11 @@ class MySketch extends React.Component {
   
   letter = p5.random(distractions);
   p5.textSize(20);
-  p5.fill(p5.random(0,255),p5.random(0,255),p5.random(0,255));
+  p5.fill(p5.random(0,200),p5.random(0,100),p5.random(0,200));
+  text_freq = p5.random(0,10)
+  if (text_freq > 7){
   p5.text(letter,p5.random(10,WIDTH),p5.random(10,HEIGHT));
-  
+  }
   
   // draw landscape
    
@@ -206,4 +208,4 @@ class MySketch extends React.Component {
 
 render (
  <MySketch />
-)                                                                 
+)                                                                                                                                  
